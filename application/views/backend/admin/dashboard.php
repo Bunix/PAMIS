@@ -1,4 +1,3 @@
-<div>dgdgdfgfdg</div>
 <div class="row">
 	<div class="col-md-8">
     	<div class="row">
@@ -20,6 +19,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End Calendar-->
+
+            
         </div>
     </div>
     
@@ -91,7 +93,7 @@
                     <div class="num" data-start="0" data-end="<?php 
                     		//echo $this->db2->count_all('tr_pft');
                     		//echo $present_today;?>" 
-                    		data-postfix="" data-duration="500" data-delay="0">1,223</div>
+                    		data-postfix="" data-duration="500" data-delay="0">1223</div>
                     
                     <h3><?php echo get_phrase('civilian_employee');?></h3>
                    <p>Total Civilian Employee</p>

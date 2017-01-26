@@ -260,7 +260,7 @@ class Admin extends CI_Controller
         if ($param1 == 'create') {
             $data['unit']           = $this->input->post('unit');
 			 $this->session->set_flashdata('flash_message' , get_phrase('data_added_successfully'));
-            redirect(base_url() . 'index.php?admin/unit_description/', 'refresh');
+            redirect(base_url() . 'index.php?admin/unitdescription/', 'refresh');
         } 
 		$this->load->view('backend/index', $page_data);
     }

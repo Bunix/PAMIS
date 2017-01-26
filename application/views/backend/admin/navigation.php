@@ -63,6 +63,44 @@
                         <span><i class="entypo-dot"></i> <?php echo get_phrase('add_personnel'); ?></span>
                     </a>
                 </li>
+                <!-- SLL -->
+                <li class="<?php if ($page_name == 'SLL') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/sll">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('s_l_l'); ?></span>
+                    </a>
+                </li>
+                <!-- AFPOS -->
+                <li class="<?php if ($page_name == 'afpos') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/afpos">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('afpos'); ?></span>
+                    </a>
+                </li>
+                <!-- OFFICER -->
+                <li class="<?php if ($page_name == 'officer') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/officer">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('officer'); ?></span>
+                    </a>
+                </li>
+                <!-- EP -->
+                <li class="<?php if ($page_name == 'enlisted') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/enlisted">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('enlisted'); ?></span>
+                    </a>
+                </li>
+                <!-- TRAINEE -->
+                <li class="<?php if ($page_name == 'trainee') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/trainee">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('trainee'); ?></span>
+                    </a>
+                </li>
+                <!-- Civ Employee -->
+                <li class="<?php if ($page_name == 'civ_employee') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/civ_employee">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('civilian_employee'); ?></span>
+                    </a>
+                </li>
+
+
 
                 <!-- personnel BULK ADMISSION -->
                 <!--li class="<?php if ($page_name == 'personnel_bulk_add') echo 'active'; ?> ">
@@ -93,7 +131,47 @@
             </ul>
         </li>
 		
-		
+		<!-- LOGISTICS -->
+        <li class="<?php
+        /*if ($page_name == 'logistics' ||
+                $page_name == 'search_logistics'
+                $page_name == 'mobility'
+                $page_name == 'ammo'
+                $page_name == 'firepower')
+            echo 'opened active has-sub';*/
+        ?> ">
+            <a href="#">
+                <i class="fa fa-briefcase"></i>
+                <span><?php echo get_phrase('logistics'); ?></span>
+            </a>
+            <ul>
+                <!-- mobility -->
+                <li class="<?php if ($page_name == 'search') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/search_logistics">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('search'); ?></span>
+                    </a>
+                </li>
+                <!-- mobility -->
+                <li class="<?php if ($page_name == 'mobility') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/mobility">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('mobility'); ?></span>
+                    </a>
+                </li>
+                
+                <!-- ammo -->
+                <li class="<?php if ($page_name == 'ammo') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/ammo">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('ammo'); ?></span>
+                    </a>
+                </li>
+                <!-- firepower -->
+                <li class="<?php if ($page_name == 'firepower') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/firepower">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('firepower'); ?></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
 		<!-- UNIT -->
         <li class="<?php
         if ($page_name == 'unit_add' ||
@@ -120,6 +198,39 @@
                 </li>
             </ul>
         </li>
+        <!-- TRAINING -->
+        <li class="<?php
+        /*if ($page_name == 'search_training' ||
+                $page_name == 'schools'
+                $page_name == 'courses')
+            echo 'opened active has-sub';*/
+        ?> ">
+            <a href="#">
+                <i class="fa fa-refresh"></i>
+                <span><?php echo get_phrase('training'); ?></span>
+            </a>
+            <ul>
+                <!-- UNIT DESCRIPTION -->
+                <li class="<?php if ($page_name == 'search_training') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/search_training">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('search_training'); ?></span>
+                    </a>
+                </li>
+                
+                <!-- UNIT -->
+                <li class="<?php if ($page_name == 'schools') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/schools">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('schools'); ?></span>
+                    </a>
+                </li>
+                <li class="<?php if ($page_name == 'courses') echo 'active'; ?> ">
+                    <a href="<?php echo base_url(); ?>index.php?admin/courses">
+                        <span><i class="entypo-dot"></i> <?php echo get_phrase('courses'); ?></span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
 
 
         <!-- TEACHER -->
